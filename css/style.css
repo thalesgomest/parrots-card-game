@@ -21,23 +21,66 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     margin-left: 122px;
-    margin-right: 122px;
+    margin-right: 88px;
 }
 
 .card {
     width: 117px;
     height: 146px;
-    background-color: #A7E9AF;
-    border: 1px solid #99CEA8;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-right: 34px;
     margin-bottom: 34px;
+    position: relative;
 }
 
 .card img {
     width: 100px;
     height: 100px;
+}
+
+/* !Flip cards */
+
+.face {
+    width: 100%;
+    height: 100%;
+    background-color: #A7E9AF;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.back-face {
+    transform: rotateY(0deg);
+}
+
+/* todo front-face face = look-back face */
+/* todo back-face face = look-front face */
+
+.screen_click_off {
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: none;
+}
+
+.screen_click_on {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: none;
+    z-index: -1;
 }
