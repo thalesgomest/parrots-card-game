@@ -2,6 +2,9 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #EEF9BF;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 * {
@@ -40,8 +43,8 @@ main {
 /* !Flip cards */
 
 .face {
-    width: 100%;
-    height: 100%;
+    width: 117px;
+    height: 146px;
     background-color: #A7E9AF;
     border-radius: 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
@@ -62,9 +65,6 @@ main {
     transform: rotateY(0deg);
 }
 
-/* todo front-face face = look-back face */
-/* todo back-face face = look-front face */
-
 .screen_click_off {
     z-index: 1;
     position: fixed;
@@ -83,4 +83,16 @@ main {
     height: 100vh;
     background-color: none;
     z-index: -1;
+}
+
+header {
+    position: relative;
+}
+
+.timer {
+    position: absolute;
+    font-size: 40px;
+    color: red;
+    top: 20%;
+    right: 5%;
 }
