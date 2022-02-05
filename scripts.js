@@ -10,13 +10,13 @@ let play_again = ""; // *  Resposta do usuário sobre jogar de novo (Sim [S] ou 
 
 // !<-----Array Imagens------>
 
-const imgs = ["/imgs/bobrossparrot.gif","/imgs/bobrossparrot.gif",
-            "/imgs/explodyparrot.gif","/imgs/explodyparrot.gif",
-            "/imgs/fiestaparrot.gif","/imgs/fiestaparrot.gif",
-            "/imgs/metalparrot.gif","/imgs/metalparrot.gif",
-            "/imgs/revertitparrot.gif","/imgs/revertitparrot.gif",
-            "/imgs/tripletsparrot.gif","/imgs/tripletsparrot.gif",
-            "/imgs/unicornparrot.gif","/imgs/unicornparrot.gif"]
+const imgs = ["imgs/bobrossparrot.gif","imgs/bobrossparrot.gif",
+            "imgs/explodyparrot.gif","imgs/explodyparrot.gif",
+            "imgs/fiestaparrot.gif","imgs/fiestaparrot.gif",
+            "imgs/metalparrot.gif","imgs/metalparrot.gif",
+            "imgs/revertitparrot.gif","imgs/revertitparrot.gif",
+            "imgs/tripletsparrot.gif","imgs/tripletsparrot.gif",
+            "imgs/unicornparrot.gif","imgs/unicornparrot.gif"]
 
 
 // !<------Confirmação de número de cards para jogar------>
