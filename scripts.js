@@ -171,7 +171,7 @@ function playAgain() {
 function checkVictory() {
 
     if ((parseInt(matchedCards)*2 === card_number)) {
-        alert(`You win with ${moves} moves and in ${document.querySelector(".timer").innerHTML} seconds!`);
+        alert(`[EN/US]\nYou win with ${moves} moves and in ${document.querySelector(".timer").innerHTML} seconds!\n\n[PT-BR]\nVocê ganhou com ${moves} jogadas e em ${document.querySelector(".timer").innerHTML} segundos!`);
         
         playAgain();
 
