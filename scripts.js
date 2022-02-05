@@ -163,7 +163,7 @@ setTimeout(countTime,300);
 // !<------Função Jogar Novamente------>
 
 function playAgain() {
-            play_again = prompt("[EN/US]\nWould you like to play again? [Y] or [N]:\n\n[PT-BR]\nVocê Gostaria de Jogar de novo? [S] ou [N]");
+            play_again = prompt("[EN/US]\nWould you like to play again? [Y] or [N]:\n\n[PT-BR]\nVocê gostaria de jogar de novo? [S] ou [N]");
         }
 
 // !<------Função Verificar Vitória------>
