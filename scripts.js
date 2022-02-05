@@ -176,7 +176,7 @@ function checkVictory() {
         playAgain();
 
         while ((play_again!=="Y")&&(play_again!=="y")&&(play_again!=="S")&&(play_again!=="s")&&(play_again!=="N")&&(play_again!=="n")) {
-            alert("Invalid Character");
+            alert("[EN/US]\nInvalid Character\n\n[PT-BR]\nCaractere inválido");
             playAgain();
         }
         if  ((play_again.toUpperCase() === "Y")||(play_again.toUpperCase() === "S") ) {
