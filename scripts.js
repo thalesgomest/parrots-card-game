@@ -24,16 +24,16 @@ const imgs = ["imgs/bobrossparrot.gif","imgs/bobrossparrot.gif",
 function parrotGame() {
 
 function cardsJogar() {
-    card_number = parseInt(prompt("How many cards do you wanna play?\nEnter with a EVEN number between 4 and 14!"))
+    card_number = parseInt(prompt("[EN-US]\nHow many cards do you wanna play?\nEnter with a EVEN number between 4 and 14!\n\n[PT-BR]\nCom quantas cartas você deseja jogar?\nEntre com um número PAR entre 4 e 14!"))
 }
 cardsJogar();
 
 while ((card_number%2!==0)||(card_number<4)||(card_number>14)) {
-    alert("Please, enter with a valid number!\nEnter with a EVEN number between 4 and 14!");
+    alert("[EN-US]\nPlease, enter with a valid number!\nEnter with a EVEN number between 4 and 14!\n\n[PT-BR]\nPor favor, entre com um número válido\nEntre com um número PAR entre 4 e 14!");
     cardsJogar();
 }
 if ((card_number%2===0)&&(card_number>=4)&&(card_number<=14)) {
-    alert("The game will start!");
+    alert("[EN-US]\nThe game will start!\n\n[PT-BR]\nO jogo irá começar!");
 }
 
 // !<------Embaralhamento dos Cards------>
@@ -163,7 +163,7 @@ setTimeout(countTime,300);
 // !<------Função Jogar Novamente------>
 
 function playAgain() {
-            play_again = prompt("Do you like play again? Yes [Y] or No [N]: ");
+            play_again = prompt("[EN/US]\nDo you like play again? [Y] or [N]:\n\n[PT-BR]\nVocê Gostaria de Jogar de novo? [S] ou [N]");
         }
 
 // !<------Função Verificar Vitória------>
@@ -175,11 +175,11 @@ function checkVictory() {
         
         playAgain();
 
-        while ((play_again!=="Y")&&(play_again!=="y")&&(play_again!=="N")&&(play_again!=="n")) {
+        while ((play_again!=="Y")&&(play_again!=="y")&&(play_again!=="S")&&(play_again!=="s")&&(play_again!=="N")&&(play_again!=="n")) {
             alert("Invalid Character");
             playAgain();
         }
-        if  (play_again.toUpperCase() === "Y" ) {
+        if  ((play_again.toUpperCase() === "Y")||(play_again.toUpperCase() === "S") ) {
                 let main = document.querySelector("main");
                 main.innerHTML = "";
                 card_number = 0;
@@ -191,7 +191,7 @@ function checkVictory() {
                 setTimeout(countTime,300);
             } else if (play_again.toUpperCase() === "N") {
                 matchedCards = 0;
-                alert("End Game! If you want to play again please reload the page.");
+                alert("[EN/US]\nEnd Game! If you want to play again please reload the page.\n\n[PT-BR]\nFim de jogo! Se quiser jogar novamente, por favor recarregue a página.");
                 clearInterval(interval);
             } 
     }
