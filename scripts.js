@@ -24,7 +24,7 @@ const imgs = ["imgs/bobrossparrot.gif","imgs/bobrossparrot.gif",
 function parrotGame() {
 
 function cardsJogar() {
-    card_number = parseInt(prompt("[EN-US]\nHow many cards do you wanna play?\nEnter with a EVEN number between 4 and 14!\n\n[PT-BR]\nCom quantas cartas você deseja jogar?\nEntre com um número PAR entre 4 e 14!"))
+    card_number = parseInt(prompt("[EN-US]\nHow many cards do you like to play with?\nPress Enter a EVEN number between 4 and 14!\n\n[PT-BR]\nCom quantas cartas você deseja jogar?\nEntre com um número PAR entre 4 e 14!"))
 }
 cardsJogar();
 
@@ -163,7 +163,7 @@ setTimeout(countTime,300);
 // !<------Função Jogar Novamente------>
 
 function playAgain() {
-            play_again = prompt("[EN/US]\nDo you like play again? [Y] or [N]:\n\n[PT-BR]\nVocê Gostaria de Jogar de novo? [S] ou [N]");
+            play_again = prompt("[EN/US]\nWould you like to play again? [Y] or [N]:\n\n[PT-BR]\nVocê Gostaria de Jogar de novo? [S] ou [N]");
         }
 
 // !<------Função Verificar Vitória------>
@@ -171,7 +171,7 @@ function playAgain() {
 function checkVictory() {
 
     if ((parseInt(matchedCards)*2 === card_number)) {
-        alert(`[EN/US]\nYou win with ${moves} moves and in ${document.querySelector(".timer").innerHTML} seconds!\n\n[PT-BR]\nVocê ganhou com ${moves} jogadas e em ${document.querySelector(".timer").innerHTML} segundos!`);
+        alert(`[EN/US]\nYou won with ${moves} moves and in ${document.querySelector(".timer").innerHTML} seconds!\n\n[PT-BR]\nVocê ganhou com ${moves} jogadas e em ${document.querySelector(".timer").innerHTML} segundos!`);
         
         playAgain();
 
@@ -184,6 +184,7 @@ function checkVictory() {
                 main.innerHTML = "";
                 card_number = 0;
                 matchedCards = 0;
+                moves = 0;
                 document.querySelector(".timer").innerHTML = "0";
                 clearInterval(interval);
                 interval = 0;
