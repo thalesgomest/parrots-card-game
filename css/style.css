@@ -40,8 +40,6 @@ main {
     height: 100px;
 }
 
-/* !Flip cards */
-
 .face {
     width: 117px;
     height: 146px;
@@ -56,6 +54,8 @@ main {
     transition: all .5s;
     transform-style: preserve-3d;
 }
+
+/* !Flip cards */
 
 .front-face {
     transform: rotateY(180deg);

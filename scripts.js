@@ -1,13 +1,14 @@
-
-
 // !<-----Variáveis Globais------>
 
 let card_number;
 let moves = 0; // * Número de jogadas realizadas = Quantidade de vezes que o usuário virou uma carta no jogo.
 let turnedCards = 0; // * Número de Cards virados.
 let time = 0; // * Timer do game;
-let matchedCards = 0;
-let interval = null;
+let matchedCards = 0; // * Número de pares de cartas iguais -> Exemplo: Se meu jogo tem 4 cartas, no final matchedCards = 2. 
+let interval = 0; // * Intervalo do timer
+let play_again = ""; // *  Resposta do usuário sobre jogar de novo (Sim [S] ou Não [N])
+
+// !<-----Array Imagens------>
 
 const imgs = ["/imgs/bobrossparrot.gif","/imgs/bobrossparrot.gif",
             "/imgs/explodyparrot.gif","/imgs/explodyparrot.gif",
@@ -19,6 +20,8 @@ const imgs = ["/imgs/bobrossparrot.gif","/imgs/bobrossparrot.gif",
 
 
 // !<------Confirmação de número de cards para jogar------>
+
+function parrotGame() {
 
 function cardsJogar() {
     card_number = parseInt(prompt("How many cards do you wanna play?\nEnter with a EVEN number between 4 and 14!"))
@@ -33,7 +36,7 @@ if ((card_number%2===0)&&(card_number>=4)&&(card_number<=14)) {
     alert("The game will start!");
 }
 
-// !<------Embaralhar os Cards------>
+// !<------Embaralhamento dos Cards------>
 
 function comparador() { 
 	return Math.random() - 0.5; 
@@ -42,21 +45,23 @@ function comparador() {
 let imgsshuffled = imgs.slice(0,(card_number));
 imgsshuffled.sort(comparador);
 
-// !<------Estrututa HTML dos Cards------>
+// !<------Estrututa dos cards que alimenta o HTML------>
 
 for (let i = 0; i < card_number; i++) {
     let main = document.querySelector('main');
-    main.innerHTML += `<div class="card" onclick="flipCard(this.querySelector('.back-face'),this.querySelector('.front-face'),this)">
-                            <div class="back-face face">
+    main.innerHTML += `<div class="card" data-identifier="card" onclick="flipCard(this.querySelector('.back-face'),this.querySelector('.front-face'),this)">
+                            <div class="back-face face" data-identifier="back-face">
                             <img src="imgs/front.png" alt="back_card">
                             </div>
-                            <div class="front-face face">
+                            <div class="front-face face" data-identifier="front-face">
                             <img src=${imgsshuffled[i]} alt="front_card">
                             </div>
                         </div>`
 }
 
-// !<------Função Virar/Desvirar Cards------>
+}
+
+// !<------Função onclick cards------>
 
 function flipCard(back, front, cardElement) {
 
@@ -114,10 +119,9 @@ function flipCard(back, front, cardElement) {
         }, 1000)
 
     }
-
 }
 
-// !<------Função Desvirar 2 Cards já viradas------>
+// !<------Função unflip cards diferentes----->
 
 function unflipCard() {
 
@@ -137,7 +141,6 @@ function unflipCard() {
     }, 1000)
 }
 
-
 // !<------Função Timer------>
 
 function countTime() {
@@ -152,20 +155,50 @@ function countTime() {
     interval = setInterval(plusCount, 1000);
 } 
 
-countTime();
+// !<------Chamando Função Timer------>
+
+setTimeout(countTime,300);
 
 
+// !<------Função Jogar Novamente------>
 
-// function checkVictory() {
-//     if ((parseInt(matchedCards)*2 === card_number)&&card_number!==0) {
-//         alert(`You win with ${moves} moves and in ${document.querySelector(".timer").innerHTML} seconds!`);
-//         let play_again = prompt("Do you like play again? [Y] or [N]: ")
-//         if  (play_again.toUpperCase() === "Y" ) {
-//             let main = document.querySelector("main");
-//             main.innerHTML = "";
-//             document.querySelector(".timer").innerHTML = "0";
-//             console.log(play_again)
-//             //Chamar o início do código again!
-//         }
-//     }
-// }
+function playAgain() {
+            play_again = prompt("Do you like play again? Yes [Y] or No [N]: ");
+        }
+
+// !<------Função Verificar Vitória------>
+
+function checkVictory() {
+
+    if ((parseInt(matchedCards)*2 === card_number)) {
+        alert(`You win with ${moves} moves and in ${document.querySelector(".timer").innerHTML} seconds!`);
+        
+        playAgain();
+
+        while ((play_again!=="Y")&&(play_again!=="y")&&(play_again!=="N")&&(play_again!=="n")) {
+            alert("Invalid Character");
+            playAgain();
+        }
+        if  (play_again.toUpperCase() === "Y" ) {
+                let main = document.querySelector("main");
+                main.innerHTML = "";
+                card_number = 0;
+                matchedCards = 0;
+                document.querySelector(".timer").innerHTML = "0";
+                clearInterval(interval);
+                interval = 0;
+                parrotGame();
+                setTimeout(countTime,300);
+            } else if (play_again.toUpperCase() === "N") {
+                matchedCards = 0;
+                alert("End Game! If you want to play again please reload the page.");
+                clearInterval(interval);
+            } 
+    }
+        
+}
+
+
+// !<------Chamando Função Jogo------>
+
+parrotGame();
