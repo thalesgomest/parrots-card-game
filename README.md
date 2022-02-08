@@ -5,7 +5,7 @@
  
 <h1 align="center">Parrots Card Game</h1>
 
-[![uses-javascript](https://user-images.githubusercontent.com/97575616/152926505-dc7a3914-21eb-4061-9fa4-144cf2210570.svg)](https://www.javascript.com)
+[![uses-javascript](https://user-images.githubusercontent.com/97575616/152987324-94b641c3-8073-4132-9950-7b7e56179080.svg)](https://www.javascript.com)
 ![uses-html5](https://user-images.githubusercontent.com/97575616/152926412-a8c6da7f-0d54-4253-a820-cb264210bbcf.svg)
 ![uses-css](https://user-images.githubusercontent.com/97575616/152917480-e46ad631-d96c-413d-8b62-25012c52c7fc.svg)
 ![built-with-git (1)](https://user-images.githubusercontent.com/97575616/152927121-6e37ae20-6f09-4f84-9bdf-889ef6ef5773.svg)
