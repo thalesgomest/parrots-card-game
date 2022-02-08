@@ -61,7 +61,7 @@
 ### Author
 ---
 
-<img width= 150px src="https://user-images.githubusercontent.com/97575616/152924489-a397b8ca-353a-43a5-9a17-7080140498fc.png" alt=""/>
+<img width= 200px src="https://octodex.github.com/images/baracktocat.jpg" alt=""/>
 <b>Thales Gomes Targino</b> 
 
 
