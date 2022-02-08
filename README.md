@@ -12,6 +12,13 @@
 ![built-with-git](https://user-images.githubusercontent.com/97575616/152921262-4c63216a-72a5-47d8-b8b0-82aea8ee9608.svg)
 [![License: MIT](https://user-images.githubusercontent.com/97575616/152917040-e317b158-cad1-4f6c-8985-0a555783da7e.svg)](https://opensource.org/licenses/MIT)
 
+## Table of contents
+* [Project Description](#project-description)
+* [Status](#status)
+* [Requirements](#requirements)
+* [Author](#author)
+
+
 ## Project Description
 <p align="justify">This was my second JavaScript project implementing in the Driven Education bootcamp, where HTML is dynamically fed with JS. It was the implementation of the Parrot Card Game, a themed memory game with randomness, effects and transition, responsiveness and dancing parrots!</p>
 
@@ -19,7 +26,7 @@
 ![status-finished](https://user-images.githubusercontent.com/97575616/152920453-f99727e7-da24-4d65-99a6-62765c441b4d.svg)
 
 
-## Roadmap
+## Requirements
 
 * **GENERAL**
     - [x] Do not use any library to implement this project (jQuery, lodash, react, etc), or other languages that compile to JS (TypeScript, ELM, etc), only pure JavaScript.
@@ -52,7 +59,7 @@
    - [x] Place a clock at the top right of the screen, counting how many seconds have passed since the start of the game. At the end, inform the number of seconds in the victory message.
    - [x] At the end of the game, ask with a `prompt` if the user would like to restart the game. If he answers yes, start the game again by asking the number of cards.
 
-### Autor
+### Author
 ---
 [![Twitter Badge](https://img.shields.io/badge/-@thales_targino-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/thales_targino)](https://twitter.com/thales_targino) [![Linkedin Badge](https://img.shields.io/badge/-thalesgomest-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thales-gomes-targino/)](https://www.linkedin.com/in/thales-gomes-targino/) 
 [![Gmail Badge](https://img.shields.io/badge/-thalestargino@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:thalestargino@gmail.com)](mailto:tgmarinho@gmail.com)
