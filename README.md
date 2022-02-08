@@ -29,15 +29,15 @@
 
 * **GENERAL**
     - [x] Do not use any library to implement this project (jQuery, lodash, react, etc), or other languages that compile to JS (TypeScript, ELM, etc), only pure JavaScript.
-    - [x] Your project must be developed using Git and GitHub, in a public repository.
+    - [x] The project must be developed using Git and GitHub, in a public repository.
     - [x] **For each requirement implemented** make a *commit* with a descriptive message of what you have evolved.
 
 * **LAYOUT**
-    - [x] Apply layout for desktop and mobile, following the offered figma.
+    - [x] Apply layout for desktop and mobile
 
 * **DISTRIBUTION OF CARDS**
 
-    - [x] When entering the game, the user will be asked how many cards he wants to play with (use `prompt`)
+    - [x] When to enter the game, the user will be asked how many cards he wants to play with (use `prompt`)
     - [x] The user can only enter even numbers in the `prompt`, from 4 to 14. Any number that escapes this rule should not be accepted. In the case of invalid numbers, the `prompt` must be repeated, until the user enters a valid number.
     - [x] After entering a valid number of cards, the game must insert the cards face down on the page so that the distribution is random
 
@@ -51,11 +51,11 @@
 
 - **END OF THE GAME**
 
-   - [x] When the user finishes turning over all the cards correctly, an `alert` should be displayed with the message **"You won in X moves!"** where X is the number of times the user turned a card in the game.
+   - [x] When the user has finished turning over all the cards correctly, an `alert` should be displayed with the message **"You won in X moves!"** where X is the number of times the user turned a card in the game.
 
 - **BONUS**
 
-   - [x] Place a clock at the top right of the screen, counting how many seconds have passed since the start of the game. At the end, inform the number of seconds in the victory message.
+   - [x] Place a timer at the top right of the screen, counting how many seconds have passed since the start of the game. At the end, inform the number of seconds in the victory message.
    - [x] At the end of the game, ask with a `prompt` if the user would like to restart the game. If he answers yes, start the game again by asking the number of cards.
 
 ### Author
