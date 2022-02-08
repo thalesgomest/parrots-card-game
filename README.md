@@ -5,11 +5,11 @@
  
 <h1 align="center">Parrots Card Game</h1>
 
-![uses-html5](https://user-images.githubusercontent.com/97575616/152917477-a2376129-a048-4137-a73e-ef08eb94e6e4.svg)
+![uses-html5](https://user-images.githubusercontent.com/97575616/152926412-a8c6da7f-0d54-4253-a820-cb264210bbcf.svg)
 ![uses-css](https://user-images.githubusercontent.com/97575616/152917480-e46ad631-d96c-413d-8b62-25012c52c7fc.svg)
-[![uses-javascript](https://user-images.githubusercontent.com/97575616/152917485-3872d2d7-0a27-4939-ba4a-c4d111768e73.svg)](https://www.javascript.com)
+[![uses-javascript](https://user-images.githubusercontent.com/97575616/152926505-dc7a3914-21eb-4061-9fa4-144cf2210570.svg)](https://www.javascript.com)
+![built-with-git](https://user-images.githubusercontent.com/97575616/152926583-c5038cf1-2284-476d-9e4d-d1e7a4987bdf.svg)
 ![built-with-visual-studio-code](https://user-images.githubusercontent.com/97575616/152921255-9e6ad64b-5a0d-4f28-a3d0-f8c6a2774d85.svg)
-![built-with-git](https://user-images.githubusercontent.com/97575616/152921262-4c63216a-72a5-47d8-b8b0-82aea8ee9608.svg)
 [![License: MIT](https://user-images.githubusercontent.com/97575616/152917040-e317b158-cad1-4f6c-8985-0a555783da7e.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of contents
@@ -23,8 +23,7 @@
 <p align="justify">This was my second JavaScript project implementing in the Driven Education bootcamp, where HTML is dynamically fed with JS. It was the implementation of the Parrot Card Game, a themed memory game with randomness, effects and transition, responsiveness and dancing parrots!</p>
 
 ### Status
-![status-finished](https://user-images.githubusercontent.com/97575616/152920453-f99727e7-da24-4d65-99a6-62765c441b4d.svg)
-
+![status-finished](https://user-images.githubusercontent.com/97575616/152926720-d042178b-24c0-4d6b-94fb-0ccbd3c082cc.svg)
 
 ## Requirements
 
